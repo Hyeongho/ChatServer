@@ -13,32 +13,90 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="01. Client">
-      <UniqueIdentifier>{e4288d35-41d3-4461-876b-b580d9954e85}</UniqueIdentifier>
+    <Filter Include="IMGUI">
+      <UniqueIdentifier>{dedb1c67-653e-463e-a468-562cc97690ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IMGUI\Lib">
+      <UniqueIdentifier>{09515ee3-221f-467a-a064-1ed3f9f3e5f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IMGUI\Window">
+      <UniqueIdentifier>{8429c182-fc75-475d-acc5-7a3baaa70fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting">
+      <UniqueIdentifier>{a9164a0f-3ff8-4228-9ce8-a2f70eff9c2d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ClientInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Client.cpp">
-      <Filter>01. Client</Filter>
+    <ClCompile Include="imgui.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIManager.cpp">
+      <Filter>IMGUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="imconfig.h">
+      <Filter>IMGUI\Lib</Filter>
     </ClInclude>
-    <ClInclude Include="Client.h">
-      <Filter>01. Client</Filter>
+    <ClInclude Include="imgui.h">
+      <Filter>IMGUI\Lib</Filter>
     </ClInclude>
-    <ClInclude Include="ChatInfo.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>IMGUI\Lib</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Client.rc">
-      <Filter>리소스 파일</Filter>
-    </ResourceCompile>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIManager.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
