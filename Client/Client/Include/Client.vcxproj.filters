@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="IMGUI">
+      <UniqueIdentifier>{dedb1c67-653e-463e-a468-562cc97690ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IMGUI\Lib">
+      <UniqueIdentifier>{09515ee3-221f-467a-a064-1ed3f9f3e5f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IMGUI\Window">
+      <UniqueIdentifier>{8429c182-fc75-475d-acc5-7a3baaa70fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting">
+      <UniqueIdentifier>{a9164a0f-3ff8-4228-9ce8-a2f70eff9c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{d4da0a4f-55ec-4f47-bf4e-ab0d4d73b5d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chat">
+      <UniqueIdentifier>{a56da700-b4b0-4301-9d93-fad8494ead8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IMGUI\Widget">
+      <UniqueIdentifier>{2fa2fd16-82be-4db2-8607-def62dcdeec8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>IMGUI\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIManager.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIWidget.cpp">
+      <Filter>IMGUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIWindow.cpp">
+      <Filter>IMGUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="PathManager.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Chat\ChatManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Chat\ChatWindow.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIRadio.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUISameLine.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUISeparator.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIButton.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUICheckBox.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIComboBox.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIGroup.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUILabel.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIListBox.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIMenuBar.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUIText.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUITextInput.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="IMGUITreeNode.cpp">
+      <Filter>IMGUI\Widget</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imconfig.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>IMGUI\Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIManager.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIWidget.h">
+      <Filter>IMGUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIWindow.h">
+      <Filter>IMGUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="PathManager.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineMath.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Chat\ChatManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Chat\ChatWindow.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIRadio.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUISameLine.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUISeparator.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIButton.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUICheckBox.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIComboBox.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIGroup.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUILabel.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIListBox.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIMenuBar.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUIText.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUITextInput.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="IMGUITreeNode.h">
+      <Filter>IMGUI\Widget</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

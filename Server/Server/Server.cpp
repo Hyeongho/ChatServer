@@ -190,34 +190,6 @@ void CServer::Run(int argc, char* argv[])
 			}
 		}
 
-		if (FD_ISSET(m_listen_sock6, &m_rset))
-		{
-			m_addrlen = sizeof(m_clientaddr6);
-
-			m_client_sock = accept(m_listen_sock6, (struct sockaddr*)&m_clientaddr6, &m_addrlen);
-
-			if (m_client_sock == INVALID_SOCKET)
-			{
-				err_display("accrpt()");
-
-				break;
-			}
-		}
-
-		else
-		{
-			char addr[INET6_ADDRSTRLEN];
-
-			inet_ntop(AF_INET6, &m_clientaddr6.sin6_addr, addr, sizeof(addr));
-
-			printf("\n[TCP/IPv6 서버] 클라이언트 접속: IP 주소=%s, 포트 번호=%d\n", addr, ntohs(m_clientaddr6.sin6_port));
-
-			if (!AddSocketInfo(m_client_sock, true, false))
-			{
-				closesocket(m_client_sock);
-			}
-		}
-
 		for (int i = 0; i < m_TotalSocket; i++)
 		{
 			SOCKETINFO* ptr = m_vSocketInfo[i].get();

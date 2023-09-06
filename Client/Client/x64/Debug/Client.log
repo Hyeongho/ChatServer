@@ -1,24 +1,13 @@
 ﻿  ClientInfo.h
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Engine.cpp
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-E:\ChatServer\Client\Client\IMGUIManager.h(22,173): error C2065: 'FONT_PATH': 선언되지 않은 식별자입니다.
-E:\ChatServer\Client\Client\Engine.cpp(10,94): error C2653: 'Engine_Space': 클래스 또는 네임스페이스 이름이 아닙니다.
-E:\ChatServer\Client\Client\Engine.cpp(10,108): error C2065: 'Space2D': 선언되지 않은 식별자입니다.
-E:\ChatServer\Client\Client\Engine.cpp(10,131): error C2653: 'Mouse_State': 클래스 또는 네임스페이스 이름이 아닙니다.
-E:\ChatServer\Client\Client\Engine.cpp(10,144): error C2065: 'Normal': 선언되지 않은 식별자입니다.
-E:\ChatServer\Client\Client\Engine.cpp(10,86): error C2614: 'CEngine': 멤버 초기화가 잘못되었습니다. 'm_Space'이(가) 기본 또는 멤버가 아닙니다.
-E:\ChatServer\Client\Client\Engine.cpp(10,118): error C2614: 'CEngine': 멤버 초기화가 잘못되었습니다. 'm_MouseState'이(가) 기본 또는 멤버가 아닙니다.
-E:\ChatServer\Client\Client\Engine.cpp(24,2): warning C4150: 불완전한 형식 'CGlobalConstantBuffer'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
-E:\ChatServer\Client\Client\Engine.h(16,8): message : 'CGlobalConstantBuffer' 선언을 참조하십시오.
-E:\ChatServer\Client\Client\Engine.cpp(25,2): warning C4150: 불완전한 형식 'CStructuredBuffer'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
-E:\ChatServer\Client\Client\Engine.h(18,8): message : 'CStructuredBuffer' 선언을 참조하십시오.
-E:\ChatServer\Client\Client\Engine.cpp(29,2): warning C4150: 불완전한 형식 'CTimer'에 대한 포인터를 삭제했습니다. 소멸자가 호출되지 않습니다.
-E:\ChatServer\Client\Client\Engine.h(13,8): message : 'CTimer' 선언을 참조하십시오.
-E:\ChatServer\Client\Client\Engine.cpp(92,35): error C2065: 'DeltaTime': 선언되지 않은 식별자입니다.
-E:\ChatServer\Client\Client\Engine.cpp(94,9): error C2065: 'DeltaTime': 선언되지 않은 식별자입니다.
   IMGUIManager.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-E:\ChatServer\Client\Client\IMGUIManager.h(22,173): error C2065: 'FONT_PATH': 선언되지 않은 식별자입니다.
-E:\ChatServer\Client\Client\IMGUIManager.cpp(3,10): fatal  error C1083: 포함 파일을 열 수 없습니다. 'IMGUIWindow.h': No such file or directory
+  IMGUIWidget.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  IMGUIWindow.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  main.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Vector2.cpp
   코드를 생성하고 있습니다...
+  Client.vcxproj -> E:\ChatServer\Client\x64\Debug\Client.exe

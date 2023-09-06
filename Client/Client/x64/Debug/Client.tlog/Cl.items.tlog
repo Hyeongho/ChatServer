@@ -1,5 +1,10 @@
 E:\ChatServer\Client\Client\ClientInfo.h;E:\ChatServer\Client\Client\x64\Debug\ClientInfo.obj
+E:\ChatServer\Client\Client\Device.cpp;E:\ChatServer\Client\Client\x64\Debug\Device.obj
+E:\ChatServer\Client\Client\Engine.cpp;E:\ChatServer\Client\Client\x64\Debug\Engine.obj
 E:\ChatServer\Client\Client\imgui.cpp;E:\ChatServer\Client\Client\x64\Debug\imgui.obj
+E:\ChatServer\Client\Client\IMGUIManager.cpp;E:\ChatServer\Client\Client\x64\Debug\IMGUIManager.obj
+E:\ChatServer\Client\Client\IMGUIWidget.cpp;E:\ChatServer\Client\Client\x64\Debug\IMGUIWidget.obj
+E:\ChatServer\Client\Client\IMGUIWindow.cpp;E:\ChatServer\Client\Client\x64\Debug\IMGUIWindow.obj
 E:\ChatServer\Client\Client\imgui_demo.cpp;E:\ChatServer\Client\Client\x64\Debug\imgui_demo.obj
 E:\ChatServer\Client\Client\imgui_draw.cpp;E:\ChatServer\Client\Client\x64\Debug\imgui_draw.obj
 E:\ChatServer\Client\Client\imgui_impl_dx11.cpp;E:\ChatServer\Client\Client\x64\Debug\imgui_impl_dx11.obj
@@ -7,3 +12,6 @@ E:\ChatServer\Client\Client\imgui_impl_win32.cpp;E:\ChatServer\Client\Client\x64
 E:\ChatServer\Client\Client\imgui_tables.cpp;E:\ChatServer\Client\Client\x64\Debug\imgui_tables.obj
 E:\ChatServer\Client\Client\imgui_widgets.cpp;E:\ChatServer\Client\Client\x64\Debug\imgui_widgets.obj
 E:\ChatServer\Client\Client\main.cpp;E:\ChatServer\Client\Client\x64\Debug\main.obj
+E:\ChatServer\Client\Client\PathManager.cpp;E:\ChatServer\Client\Client\x64\Debug\PathManager.obj
+E:\ChatServer\Client\Client\Timer.cpp;E:\ChatServer\Client\Client\x64\Debug\Timer.obj
+E:\ChatServer\Client\Client\Vector2.cpp;E:\ChatServer\Client\Client\x64\Debug\Vector2.obj
