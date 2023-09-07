@@ -11,12 +11,15 @@
 #include "../IMGUISeparator.h"
 #include "../IMGUIModal.h"
 
-CChatWindow::CChatWindow()
+bool CChatWindow::m_Stop = false;
+
+CChatWindow::CChatWindow() : m_Press(false)
 {
 }
 
 CChatWindow::~CChatWindow()
 {
+	
 }
 
 bool CChatWindow::Init()
@@ -36,7 +39,8 @@ bool CChatWindow::Init()
 	m_InputIP->SetHideName(true);
 	m_InputIP->AddFlag(ImGuiInputTextFlags_::ImGuiInputTextFlags_None);
 	m_InputIP->SetTextType(ImGuiText_Type::String);
-	m_InputIP->SetCallback(this, &CChatWindow::CallBackIP);
+
+	m_InputIP->SetText("127.0.0.1");
 
 	Line = AddWidget<CIMGUISameLine>("Line");
 
@@ -50,7 +54,8 @@ bool CChatWindow::Init()
 	m_InputPort->SetHideName(true);
 	m_InputPort->AddFlag(ImGuiInputTextFlags_::ImGuiInputTextFlags_None);
 	m_InputPort->SetTextType(ImGuiText_Type::String);
-	m_InputPort->SetCallback(this, &CChatWindow::CallBackPort);
+
+	m_InputPort->SetText("9000");
 
 	Line = AddWidget<CIMGUISameLine>("Line");
 
@@ -84,29 +89,107 @@ void CChatWindow::Update(float DeltaTime)
 
 void CChatWindow::ConnectCallback()
 {
+	if (CChatManager::GetInst()->GetConnet())
+	{
+		return;
+	}
+
 	std::string IP = m_InputIP->GetTextMultibyte();
 	std::string Port = m_InputPort->GetTextMultibyte();
 
 	CChatManager::GetInst()->Connect(IP, Port);
+
+	m_SendThread = std::thread(&CChatWindow::Send, this);
+	m_RecvThread = std::thread(&CChatWindow::Recv, this);
 }
 
 void CChatWindow::SendCallback()
 {
-	
+	m_Press = true;
+
+	m_cv.notify_all();
 }
 
-void CChatWindow::CallBackIP()
+void CChatWindow::StopThreads()
 {
-}
+	m_Stop = true;
 
-void CChatWindow::CallBackPort()
-{
+	if (m_SendThread.joinable())
+	{
+		if (m_SendThread.joinable())
+		{
+			m_SendThread.join();
+		}
+	}
+
+	if (m_RecvThread.joinable())
+	{
+		if (m_RecvThread.joinable())
+		{
+			m_RecvThread.join();
+		}
+	}
 }
 
 void CChatWindow::Send()
 {
+	while (m_Stop == false)
+	{
+		if (m_Press)
+		{
+			m_mutex.lock();
+
+			int retval = CChatManager::GetInst()->GetRetval();
+
+			std::string msg = m_InputMessage->GetTextMultibyte();
+
+			SOCKET sock = CChatManager::GetInst()->GetScoket();
+
+			int len = msg.size();
+
+			strncpy(m_InputBuf, msg.c_str(), len);
+
+			retval = send(sock, m_InputBuf, BUFSIZE, 0);
+
+			m_InputMessage->SetText("");
+
+			m_Press = false;
+
+			m_mutex.unlock();
+		}
+	}
 }
 
 void CChatWindow::Recv()
 {
+	while (m_Stop == false)
+	{
+		if (CChatManager::GetInst()->GetConnet())
+		{
+			SOCKET sock = CChatManager::GetInst()->GetScoket();
+
+			char RecvMsg[BUFSIZE];
+
+			int len = recv(sock, RecvMsg, BUFSIZE - 1, 0);
+
+			if (len == SOCKET_ERROR)
+			{
+				continue;
+			}
+
+			m_mutex.lock();
+
+			if (len >= 0)
+			{
+				RecvMsg[len] = '\0';
+			}
+
+			if (RecvMsg[0] != '\0')
+			{
+				m_List->AddItem(RecvMsg);
+			}
+
+			m_mutex.unlock();
+		}
+	}
 }

@@ -17,6 +17,7 @@ typedef struct _SOCKETINFO
 	bool isUDP;
 	char buf[BUFSIZE + 1];
 	int recvbytes;
+	std::string Port;
 } SOCKETINFO;
 
 class CServer
@@ -47,7 +48,7 @@ private:
 	struct sockaddr_in6 m_clientaddr6;
 
 public:
-	bool AddSocketInfo(SOCKET sock, bool isIPv6, bool isUDP);
+	bool AddSocketInfo(SOCKET sock, bool isIPv6, bool isUDP, std::string Port);
 	void RemoveSocketInfo(int index);
 
 public:

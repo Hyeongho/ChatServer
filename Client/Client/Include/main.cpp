@@ -17,5 +17,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 	CChatManager::DestroyInst();
 
+	WSACleanup();
+
 	return Ret;
 }

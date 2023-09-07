@@ -6,6 +6,7 @@ class CChatManager
 {
 private:
 	class CChatWindow* m_ChatWindow;
+	//std::shared_ptr<class CChatWindow> m_ChatWindow;
 
 private:
 	WSADATA m_wsa;
@@ -47,6 +48,11 @@ public:
 	bool GetConnet() const
 	{
 		return m_IsConnect;
+	}
+
+	int GetRetval() const
+	{
+		return m_retval;
 	}
 
 public:

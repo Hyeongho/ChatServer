@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "../BinObj/ClientInfo.h.obj",
+            "outputs": [
+                "E:\\ChatServer\\Client\\Client\\BinObj\\vc143.pdb",
+                "../BinObj/",
+                "E:\\ChatServer\\Client\\Client\\BinObj\\ClientInfo.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "ClientInfo.h",
+                    "source-path": "e:\\chatserver\\client\\client\\include\\clientinfo.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

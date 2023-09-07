@@ -13,6 +13,8 @@ CChatManager::CChatManager()
 
 CChatManager::~CChatManager()
 {
+	m_ChatWindow->StopThreads();
+
 	CEngine::DestroyInst();
 }
 
@@ -31,7 +33,6 @@ void CChatManager::Connect(std::string IP, std::string Port)
 	memset(&m_serveraddr, 0, sizeof(m_serveraddr));
 	m_serveraddr.sin_family = AF_INET;
 	inet_pton(AF_INET, IP.c_str(), &m_serveraddr.sin_addr);
-	//inet_pton(AF_INET, "127.0.0.1", &m_serveraddr.sin_addr);
 	m_serveraddr.sin_port = htons(SERVERPORT);
 	m_retval = connect(m_sock, (struct sockaddr*)&m_serveraddr, sizeof(m_serveraddr));
 
@@ -41,6 +42,27 @@ void CChatManager::Connect(std::string IP, std::string Port)
 
 		return;
 	}
+
+	char PortNum[BUFSIZE];
+
+	int len = recv(m_sock, PortNum, BUFSIZE - 1, 0);
+
+	if (len >= 0)
+	{
+		PortNum[len] = '\0';
+	}
+
+	m_ChatWindow->SetName(PortNum);
+
+	u_long mode = 1;
+	m_retval = ioctlsocket(m_sock, FIONBIO, &mode);
+
+	if (m_retval == SOCKET_ERROR)
+	{
+		err_quit("ioctlsocket()");
+	}
+
+	m_IsConnect = true;
 }
 
 bool CChatManager::Init(HINSTANCE hInst)

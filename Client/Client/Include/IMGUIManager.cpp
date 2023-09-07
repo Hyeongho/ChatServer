@@ -3,7 +3,6 @@
 #include "Device.h"
 #include "IMGUIWindow.h"
 #include "IMGUIModal.h"
-#include "IMGUITestWindow.h"
 
 DEFINITION_SINGLE(CIMGUIManager)
 

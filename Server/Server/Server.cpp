@@ -8,7 +8,7 @@ CServer::~CServer()
 {
 }
 
-bool CServer::AddSocketInfo(SOCKET sock, bool isIPv6, bool isUDP)
+bool CServer::AddSocketInfo(SOCKET sock, bool isIPv6, bool isUDP, std::string Port)
 {
 	if (m_TotalSocket >= FD_SETSIZE) 
 	{
@@ -28,6 +28,7 @@ bool CServer::AddSocketInfo(SOCKET sock, bool isIPv6, bool isUDP)
 	ptr->isIPv6 = isIPv6;
 	ptr->isUDP = isUDP;
 	ptr->recvbytes = 0;
+	ptr->Port = Port;
 	m_vSocketInfo.push_back(ptr);
 
 	m_TotalSocket++;
@@ -111,6 +112,9 @@ bool CServer::Start()
 		return false;
 	}
 
+	u_long mode = 1;
+	m_retval = ioctlsocket(m_listen_sock4, FIONBIO, &mode);
+
 	m_listen_sock6 = socket(AF_INET6, SOCK_STREAM, 0);
 
 	if (m_listen_sock6 == INVALID_SOCKET)
@@ -183,10 +187,14 @@ void CServer::Run(int argc, char* argv[])
 
 				printf("\n[TCP/IPv4 서버] 클라이언트 접속: IP 주소=%s, 포트 번호=%d\n", addr, ntohs(m_clientaddr4.sin_port));
 
-				if (!AddSocketInfo(m_client_sock, false, false))
+				std::string port = std::to_string(ntohs(m_clientaddr4.sin_port));
+
+				if (!AddSocketInfo(m_client_sock, false, false, port))
 				{
 					closesocket(m_client_sock);
 				}
+
+				m_retval = send(m_client_sock, port.c_str(), port.size(), 0);
 			}
 		}
 
@@ -205,6 +213,8 @@ void CServer::Run(int argc, char* argv[])
 					continue;
 				}
 
+				printf("\n포트 번호=%s: %s\n", ptr->Port.c_str(), ptr->buf);
+
 				ptr->recvbytes += m_retval;
 
 				if (ptr->recvbytes == BUFSIZE)
@@ -213,9 +223,11 @@ void CServer::Run(int argc, char* argv[])
 
 					for (int j = 0; j < m_TotalSocket; j++)
 					{
-						SOCKETINFO* ptr2 = m_vSocketInfo[i].get();
+						SOCKETINFO* ptr2 = m_vSocketInfo[j].get();
 
-						m_retval = send(ptr2->sock, ptr->buf, BUFSIZE, 0);
+						std::string Recv = "[" + ptr->Port + "]" + ptr->buf;
+
+						m_retval = send(ptr2->sock, Recv.c_str(), BUFSIZE, 0);
 
 						if (m_retval == SOCKET_ERROR)
 						{

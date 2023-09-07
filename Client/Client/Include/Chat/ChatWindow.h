@@ -22,7 +22,7 @@ private:
 	class CIMGUIListBox* m_List;
 
 private:
-	char InputBuf[BUFSIZE];
+	char m_InputBuf[BUFSIZE];
 	std::vector<std::string> m_SendMsg;
 	std::vector<std::string> m_RecvMsg;
 
@@ -30,6 +30,13 @@ private:
 	sockaddr_in serverAddr;
 
 	std::mutex m_mutex;
+	std::thread  m_SendThread;
+	std::thread  m_RecvThread;
+
+	std::condition_variable m_cv;
+	
+	bool m_Press;
+	static bool m_Stop;
 
 public:
 	virtual bool Init();
@@ -39,8 +46,8 @@ private:
 	void ConnectCallback();
 	void SendCallback();
 
-	void CallBackIP();
-	void CallBackPort();
+public:
+	void StopThreads();
 
 private:
 	void Send();

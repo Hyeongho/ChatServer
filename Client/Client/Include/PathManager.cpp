@@ -8,8 +8,8 @@ CPathManager::CPathManager()
 
 CPathManager::~CPathManager()
 {
-    auto    iter = m_mapPath.begin();
-    auto    iterEnd = m_mapPath.end();
+    auto iter = m_mapPath.begin();
+    auto iterEnd = m_mapPath.end();
 
     for (; iter != iterEnd; ++iter)
     {

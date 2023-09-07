@@ -12,7 +12,7 @@ CEngine::CEngine() : m_ClearColor{}, m_Timer(nullptr), m_Start(false), m_Play(tr
 {
 	//_CrtDumpMemoryLeaks();
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-	//_CrtSetBreakAlloc(228);
+	//_CrtSetBreakAlloc(302843);
 
 	/*m_ClearColor[0] = 1.f;
 	m_ClearColor[1] = 1.f;
@@ -23,6 +23,16 @@ CEngine::~CEngine()
 {
 	CPathManager::DestroyInst();
 	CIMGUIManager::DestroyInst();
+
+//#ifdef _DEBUG
+//
+//	CIMGUIManager::DestroyInst();
+//
+//#else
+//
+//
+//#endif // _DEBUG
+
 	CDevice::DestroyInst();
 
 	SAFE_DELETE(m_Timer);
