@@ -155,6 +155,8 @@ void CChatWindow::Send()
 
 			m_Press = false;
 
+			memset(m_InputBuf, NULL, BUFSIZE);
+
 			m_mutex.unlock();
 		}
 	}

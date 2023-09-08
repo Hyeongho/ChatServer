@@ -1,8 +1,65 @@
 ﻿  모듈 종속성의 소스를 검사하는 중...
+  ClientInfo.h
+  컴파일하는 중...
+  ClientInfo.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(252,21): warning C5260: 상수 변수 'DirectX::XM_PI'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(253,21): warning C5260: 상수 변수 'DirectX::XM_2PI'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(254,21): warning C5260: 상수 변수 'DirectX::XM_1DIVPI'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(255,21): warning C5260: 상수 변수 'DirectX::XM_1DIV2PI'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(256,21): warning C5260: 상수 변수 'DirectX::XM_PIDIV2'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(257,21): warning C5260: 상수 변수 'DirectX::XM_PIDIV4'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(259,24): warning C5260: 상수 변수 'DirectX::XM_SELECT_0'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(260,24): warning C5260: 상수 변수 'DirectX::XM_SELECT_1'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(262,24): warning C5260: 상수 변수 'DirectX::XM_PERMUTE_0X'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(263,24): warning C5260: 상수 변수 'DirectX::XM_PERMUTE_0Y'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(264,24): warning C5260: 상수 변수 'DirectX::XM_PERMUTE_0Z'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(265,24): warning C5260: 상수 변수 'DirectX::XM_PERMUTE_0W'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(266,24): warning C5260: 상수 변수 'DirectX::XM_PERMUTE_1X'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(267,24): warning C5260: 상수 변수 'DirectX::XM_PERMUTE_1Y'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(268,24): warning C5260: 상수 변수 'DirectX::XM_PERMUTE_1Z'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(269,24): warning C5260: 상수 변수 'DirectX::XM_PERMUTE_1W'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(271,24): warning C5260: 상수 변수 'DirectX::XM_SWIZZLE_X'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(272,24): warning C5260: 상수 변수 'DirectX::XM_SWIZZLE_Y'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(273,24): warning C5260: 상수 변수 'DirectX::XM_SWIZZLE_Z'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(274,24): warning C5260: 상수 변수 'DirectX::XM_SWIZZLE_W'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(276,24): warning C5260: 상수 변수 'DirectX::XM_CRMASK_CR6'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(277,24): warning C5260: 상수 변수 'DirectX::XM_CRMASK_CR6TRUE'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(278,24): warning C5260: 상수 변수 'DirectX::XM_CRMASK_CR6FALSE'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(279,24): warning C5260: 상수 변수 'DirectX::XM_CRMASK_CR6BOUNDS'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(284,22): warning C5260: 상수 변수 'DirectX::XM_CACHE_LINE_SIZE'에 포함된 헤더 파일 컨텍스트에는 내부 연결이 있지만 가져온 헤더 단위 컨텍스트에는 외부 연결이 있습니다. 번역 단위 간에 공유할 경우 '인라인'으로 선언하거나 이 번역 단위에 대해 로컬로 사용하려는 의도를 표현하려면 '정적'으로 선언하는 것이 좋습니다.
   ChatManager.cpp
-  코드를 생성하고 있습니다.
-  2 of 2798 functions (<0.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    31 functions had inline decision re-evaluated but remain unchanged
-  코드를 생성했습니다.
-  Client.vcxproj -> E:\ChatServer\Client\Client\Bin\Client.exe
+  ChatWindow.cpp
+E:\ChatServer\Client\Client\Include\Chat\ChatWindow.cpp(148,12): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Device.cpp
+  Engine.cpp
+  imgui.cpp
+  IMGUIButton.cpp
+  IMGUICheckBox.cpp
+  IMGUIComboBox.cpp
+  IMGUIGroup.cpp
+  IMGUILabel.cpp
+  IMGUIListBox.cpp
+  IMGUIManager.cpp
+  IMGUIMenuBar.cpp
+  IMGUIRadio.cpp
+  IMGUISameLine.cpp
+  IMGUISeparator.cpp
+  IMGUIText.cpp
+  IMGUITextInput.cpp
+  IMGUITreeNode.cpp
+  IMGUIWidget.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  IMGUIWindow.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_win32.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  main.cpp
+  PathManager.cpp
+  Timer.cpp
+  Vector2.cpp
+  코드를 생성하고 있습니다...
+  Client.vcxproj -> E:\ChatServer\Client\Client\Bin\Client_Debug.exe

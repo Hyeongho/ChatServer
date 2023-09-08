@@ -240,6 +240,8 @@ void CServer::Run(int argc, char* argv[])
 						}
 					}
 				}
+
+				memset(ptr->buf, NULL, BUFSIZE);
 			}
 		}
 	}
