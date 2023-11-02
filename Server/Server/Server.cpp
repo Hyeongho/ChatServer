@@ -53,19 +53,6 @@ void CServer::RemoveSocketInfo(int index)
 		printf("[TCP/IPv4 서버] 클라이언트 종료: IP 주소=%s, 포트 번호=%d\n", addr, ntohs(m_clientaddr4.sin_port));
 	}
 
-	else
-	{
-		m_addrlen = sizeof(m_clientaddr6);
-
-		getpeername(ptr->sock, (struct sockaddr*)&m_clientaddr6, &m_addrlen);
-
-		char addr[INET6_ADDRSTRLEN];
-
-		inet_ntop(AF_INET6, &m_clientaddr6.sin6_addr, addr, sizeof(addr));
-
-		printf("[TCP/IPv6 서버] 클라이언트 종료: IP 주소=%s, 포트 번호=%d\n", addr, ntohs(m_clientaddr6.sin6_port));
-	}
-
 	// 소켓 닫기
 	closesocket(ptr->sock);
 
